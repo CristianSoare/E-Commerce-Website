@@ -17,7 +17,9 @@
     <section>
       <nav>
         <div class="nav__container">
-          <img class="logo" src="assets/Library.svg" alt="">
+          <a href="./index.html">
+            <img class="logo" src="assets/Library.svg" alt="">
+          </a>
           <ul class="nav__links">
             <li><a href="./index.html" class="nav__link">Home</a></li>
             <li><a href="#" class="nav__link">Contact</a></li>
@@ -51,20 +53,20 @@
         <div class="container">
           <div class="row">
             <div class="books__header">
-            <h2 class="section__title books__header--title">
-              All <span class="purple">Books</span>
-            </h2>
-            <select id="filter" onchange="filterBooks(event)">
-              <option value="" disabled selected>Sort</option>
-              <option value="LOW_TO_HIGH">Price, Low to High</option>
-              <option value="HIGH_TO_LOW">Price, High to Low</option>
-              <option value="RATING">Rating</option>
-            </select>
-          </div>
-          <div class="books books__loading">
-            <i class="fas fa-spinner books__loading--spinner"></i>
-            <!--Books go here-->
-          </div>
+              <h2 class="section__title books__header--title">
+                All <span class="purple">Books</span>
+              </h2>
+              <select id="filter" onchange="filterBooks(event)">
+                <option value="" disabled selected>Sort</option>
+                <option value="LOW_TO_HIGH">Price, Low to High</option>
+                <option value="HIGH_TO_LOW">Price, High to Low</option>
+                <option value="RATING">Rating</option>
+              </select>
+            </div>
+            <div class="books books__loading">
+              <i class="fas fa-spinner books__loading--spinner"></i>
+              <!--Books go here-->
+            </div>
           </div>
         </div>
       </section>
@@ -79,9 +81,9 @@
             </figure>
           </a>
           <div class="footer__list">
-            <a href="#" class="footer__link">Home</a>
+            <a href="./index.html" class="footer__link">Home</a>
             <a class="footer__link no-cursor">About</a>
-            <a href="#features" class="footer__link">Books</a>
+            <a href="./books.html" class="footer__link">Books</a>
             <a class="footer__link no-cursor">Contact</a>
           </div>
           <div class="footer__copyright">Copyright &copy; 2021 Library</div>
